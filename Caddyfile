@@ -1,14 +1,14 @@
 {
-    #email typingrealm@gmail.com
+    email typingrealm@gmail.com
 }
 
-#typingrealm.com {
-localhost {
+typingrealm.com {
+#localhost {
     reverse_proxy typingrealm-web-ui:80
 }
 
-#api.typingrealm.com {
-api.localhost {
+api.typingrealm.com {
+#api.localhost {
     handle_path /typing/* {
         reverse_proxy typingrealm-typing-1:8080 typingrealm-typing-2:8080 {
             lb_policy round_robin
