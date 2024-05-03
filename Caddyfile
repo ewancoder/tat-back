@@ -15,3 +15,7 @@ api.typingrealm.com {
         }
     }
 }
+
+kartman.typingrealm.com {
+    reverse_proxy kartman:8080
+}
