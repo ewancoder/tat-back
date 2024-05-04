@@ -16,6 +16,10 @@ api.typingrealm.com {
     }
 }
 
-kartman.typingrealm.com {
+api.kartman.typingrealm.com {
     reverse_proxy kartman:8080
+}
+
+kartman.typingrealm.com {
+    reverse_proxy kartman-ui:80
 }
