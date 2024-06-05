@@ -23,3 +23,11 @@ api.kartman.typingrealm.com {
 kartman.typingrealm.com {
     reverse_proxy kartman-ui:80
 }
+
+api.dev.kartman.typingrealm.com {
+    reverse_proxy ng-kartman-api:8080
+}
+
+dev.kartman.typingrealm.com {
+    reverse_proxy ng-kartman-ui:80
+}
